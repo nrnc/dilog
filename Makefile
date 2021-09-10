@@ -3,3 +3,9 @@ compile:
 
 test:
 	go test -race ./...
+
+testv:
+	go test -v -race ./...
+
+testc:
+	go test -cover -race ./...

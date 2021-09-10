@@ -74,6 +74,7 @@ func (s *store) Read(pos uint64) ([]byte, error) {
 	return b, nil
 }
 
+// ReadAt reads the len(p) bytes from the offset(off)
 func (s *store) ReadAt(p []byte, off int64) (int, error) {
 	s.mu.Lock()
 	defer s.mu.Unlock()
